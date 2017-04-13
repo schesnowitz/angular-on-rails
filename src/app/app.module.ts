@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { Angular2TokenService } from 'angular2-token';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from "app/router/app-routing.module";
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +19,7 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    //AppRoutingModule,
+    AppRoutingModule,
 
   ],
   providers: [Angular2TokenService],
